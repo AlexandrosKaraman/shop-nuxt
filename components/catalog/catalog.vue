@@ -24,6 +24,7 @@
         v-for="product in products"
         :key="product.article"
         :product_data="product"
+        @addToCart="addToCart"
       />
     </div>
   </div>
@@ -31,7 +32,7 @@
 
 <script>
 import catalogItem from "./catalog-item";
-// import { mapActions, mapGetters } from "vuex";
+import { mapActions, mapGetters } from "vuex";
 
 export default {
   data() {
@@ -43,8 +44,9 @@ export default {
           title: "Персик",
           oldPrice: "110 руб",
           price: "96 руб",
-          article: "T1",
+          article: "F1",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -52,8 +54,9 @@ export default {
           title: "Баклажан",
           oldPrice: "105 руб",
           price: "82 руб",
-          article: "T2",
+          article: "F2",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -61,8 +64,9 @@ export default {
           title: "Авокадо",
           oldPrice: "135 руб",
           price: "59 руб",
-          article: "T3",
+          article: "F3",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -70,8 +74,9 @@ export default {
           title: "Ананас",
           oldPrice: "187 руб",
           price: "146 руб",
-          article: "T4",
+          article: "F4",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -79,8 +84,9 @@ export default {
           title: "Гранат",
           oldPrice: "320 руб",
           price: "290 руб",
-          article: "T5",
+          article: "F5",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -88,8 +94,9 @@ export default {
           title: "Грейпфрукт",
           oldPrice: "190 руб",
           price: "140 руб",
-          article: "T6",
+          article: "F6",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -97,8 +104,9 @@ export default {
           title: "Груша",
           oldPrice: "115 руб",
           price: "89 руб",
-          article: "T7",
+          article: "F7",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -106,8 +114,9 @@ export default {
           title: "Огурцы",
           oldPrice: "118 руб",
           price: "100 руб",
-          article: "T8",
+          article: "F8",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -115,8 +124,9 @@ export default {
           title: "Помидоры",
           oldPrice: "102 руб",
           price: "86 руб",
-          article: "T9",
+          article: "F9",
           available: true,
+          quantity: 1,
         },
         {
           img:
@@ -124,8 +134,9 @@ export default {
           title: "Листья салата",
           oldPrice: "115 руб",
           price: "89 руб",
-          article: "T10",
+          article: "F10",
           available: true,
+          quantity: 1,
         },
       ],
       currentSlideIndex: 0,
@@ -134,11 +145,16 @@ export default {
   components: {
     catalogItem,
   },
-  computed: {
-    // ...mapGetters(["PRODUCTS"]),
-  },
+  // computed: { ...mapGetters(["products"]) },
+
   methods: {
-    // ...mapActions(["GET_PRODUCTS_FROM_API"]),
+    ...mapActions(
+      ["ADD_TO_CART"]
+      // ["GET_PRODUCTS_FROM_API"]
+    ),
+    addToCart(data) {
+      this.ADD_TO_CART(data);
+    },
 
     prevSlide() {
       if (this.currentSlideIndex > 0) {
@@ -152,9 +168,10 @@ export default {
         this.currentSlideIndex++;
       }
     },
-  },
-  mounted() {
-    // this.GET_PRODUCTS_FROM_API();
+
+    mounted() {
+      // this.GET_PRODUCTS_FROM_API();
+    },
   },
 };
 </script>
@@ -181,9 +198,6 @@ export default {
   &__btn {
     width: 40px;
     height: 40px;
-  }
-  &__carousel {
-    // margin-left: -285px;
   }
 }
 </style>

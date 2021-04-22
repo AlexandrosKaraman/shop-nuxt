@@ -1,6 +1,8 @@
 <template>
-  <div class="main-wrapper">
-    <catalog />
+  <div>
+    <div class="main-wrapper">
+      <catalog />
+    </div>
   </div>
 </template>
 
@@ -11,7 +13,7 @@ export default {
   data() {
     return {};
   },
-  component: {
+  components: {
     catalog,
   },
 };

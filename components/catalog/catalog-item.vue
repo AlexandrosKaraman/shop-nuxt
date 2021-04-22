@@ -4,7 +4,7 @@
     <div class="new-item__title">{{ product_data.title }}, 1 кг</div>
     <div class="new-item__old-price">{{ product_data.oldPrice }}</div>
     <div class="new-item__price">{{ product_data.price }}</div>
-    <button class="new-item__btn">В корзину</button>
+    <button @click="addToCart" class="new-item__btn">В корзину</button>
   </div>
 </template>
 
@@ -21,7 +21,11 @@ export default {
       },
     },
   },
-  methods: {},
+  methods: {
+    addToCart() {
+      this.$emit("addToCart", this.product_data);
+    },
+  },
 };
 </script>
 

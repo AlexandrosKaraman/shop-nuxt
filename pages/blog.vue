@@ -1,9 +1,22 @@
 <template>
-  <h1>Blog</h1>
+  <div>
+    <div>
+      <v-cart v-if="CART.length" :cart_data="CART" />
+    </div>
+  </div>
 </template>
 
 <script>
-export default {};
+import { mapGetters } from "vuex";
+import vCart from "../components/catalog/cart/v-cart";
+
+export default {
+  components: {
+    vCart,
+  },
+
+  computed: mapGetters(["CART"]),
+};
 </script>
 
 <style>

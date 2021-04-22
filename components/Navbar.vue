@@ -8,7 +8,7 @@
         <nuxt-link class="menu__link" to="/shipping">Доставка</nuxt-link>
         <nuxt-link class="menu__link" to="/payment">Оплата</nuxt-link>
         <nuxt-link class="menu__link" to="/account">Кабинет</nuxt-link>
-        <nuxt-link class="menu__link" to="/blog">Блог</nuxt-link>
+        <nuxt-link class="menu__link" to="/blog">Корзина</nuxt-link>
       </nav>
       <div class="menu__info">
         <p>Доставка с 8:00 до 23:00</p>

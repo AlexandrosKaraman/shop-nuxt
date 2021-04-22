@@ -3,7 +3,7 @@
     <img class="nuts-item__img" :src="nuts_data.img" alt="img" />
     <div class="nuts-item__title">{{ nuts_data.title }}, 1 кг</div>
     <div class="nuts-item__price">{{ nuts_data.price }}</div>
-    <button class="nuts-item__btn">В корзину</button>
+    <button @click="addToCart" class="nuts-item__btn">В корзину</button>
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
       default() {
         return {};
       },
+    },
+  },
+  methods: {
+    addToCart() {
+      this.$emit("addToCart", this.nuts_data);
     },
   },
 };

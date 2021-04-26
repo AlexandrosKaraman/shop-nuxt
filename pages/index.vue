@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="container">
+  <div class="container">
+    <div>
       <promo />
     </div>
     <div>
@@ -74,10 +74,23 @@ export default {
 
 <style>
 .container {
+  max-width: 1438px;
+  padding: 0 15px;
   margin: 0 auto;
-  display: flex;
-  padding-top: 20px;
-  justify-content: center;
-  text-align: center;
+}
+@media (max-width: 1408px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
 }
 </style>

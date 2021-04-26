@@ -18,13 +18,12 @@ export default {};
 
 <style lang="scss" scoped>
 .desserts {
-  width: 100%;
-  height: 100%;
+  max-width: 1408px;
 
   margin: 40px 0;
 
   &__img {
-    height: 318px;
+    width: 100%;
     background-image: url(https://static-sl.insales.ru/r/MjqsHu0tN0g/fit/1408/0/ce/1/plain/files/1/2281/14797033/original/info_2.jpg);
     position: relative;
   }

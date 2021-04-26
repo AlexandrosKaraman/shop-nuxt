@@ -66,5 +66,10 @@ export default {
     font-size: 17px;
     cursor: pointer;
   }
+  &__btn:active {
+    opacity: 0.8;
+    box-shadow: 0 1px 0 #00823f;
+    bottom: -4px;
+  }
 }
 </style>

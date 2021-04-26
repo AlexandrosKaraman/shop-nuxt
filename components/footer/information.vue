@@ -103,6 +103,7 @@ export default {};
 <style lang="scss" scoped>
 .wrapper {
   display: grid;
+  max-width: 1408px;
   grid-template-columns: 6fr 2fr;
   background-color: rgb(238, 239, 240);
 
@@ -112,7 +113,7 @@ export default {};
   display: grid;
   grid-template-columns: 185px 140px 284px;
   grid-template-rows: min-content;
-  max-width: 1900px;
+  max-width: 1408px;
   height: 392px;
 
   &__item {
@@ -162,6 +163,15 @@ export default {};
   }
   label {
     padding-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    display: grid;
+    max-width: 1408px;
+    grid-template-columns: 1fr;
+    background-color: #eeeff0;
+    margin-top: 60px;
   }
 }
 </style>

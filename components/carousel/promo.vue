@@ -37,7 +37,7 @@ export default {
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 1450px;
+  max-width: 1408px;
   height: 470px;
   z-index: 10;
 }
@@ -73,9 +73,5 @@ export default {
   left: 0;
   bottom: 0;
   right: 0;
-}
-.carousel-slider img {
-  width: 100%;
-  height: 100%;
 }
 </style>

@@ -73,4 +73,14 @@ h1 {
     font-weight: 600;
   }
 }
+@media (max-width: 767px) {
+  .shares {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 740px;
+    display: grid;
+    margin: 0 auto;
+    gap: 10px;
+  }
+}
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="nuts-item">
     <img class="nuts-item__img" :src="nuts_data.img" alt="img" />
-    <div class="nuts-item__title">{{ nuts_data.title }}, 1 кг</div>
+    <div class="nuts-item__title">{{ nuts_data.title }}, {{ scale }}</div>
     <div class="nuts-item__price">{{ nuts_data.price }}</div>
     <button @click="addToCart" class="nuts-item__btn">В корзину</button>
   </div>
@@ -10,7 +10,9 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      scale: " кг",
+    };
   },
   props: {
     nuts_data: {
@@ -65,6 +67,11 @@ export default {
     border-radius: 5px;
     font-size: 17px;
     cursor: pointer;
+  }
+  &__btn:active {
+    opacity: 0.8;
+    box-shadow: 0 1px 0 #00823f;
+    bottom: -4px;
   }
 }
 </style>

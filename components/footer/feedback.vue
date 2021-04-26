@@ -69,4 +69,13 @@ h1 {
     padding: 20px;
   }
 }
+@media (max-width: 767px) {
+  .feedback {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 767px;
+    gap: 10px;
+    justify-items: center;
+  }
+}
 </style>

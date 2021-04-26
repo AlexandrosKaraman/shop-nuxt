@@ -78,4 +78,15 @@ h1 {
     font-size: 24px;
   }
 }
+@media (max-width: 767px) {
+  h1 {
+    text-align: center;
+  }
+  .qualities {
+    max-width: 767px;
+    display: grid;
+    grid-template-columns: 3fr;
+    justify-items: center;
+  }
+}
 </style>

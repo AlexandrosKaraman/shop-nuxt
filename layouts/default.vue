@@ -16,13 +16,9 @@ export default {
 </script>
 
 <style>
-body {
-  max-width: 1920px;
-  width: 100%;
-}
-.page {
+/* .page {
   display: grid;
   justify-content: center;
   margin: 0 auto;
-}
+} */
 </style>

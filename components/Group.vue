@@ -57,9 +57,8 @@ export default {};
 
 <style lang="scss" scoped>
 .group {
-  min-width: 1408px;
-  display: grid;
-  grid-template-rows: repeat (2, 3fr);
+  max-width: 1408px;
+  width: 100%;
 
   .big {
     display: grid;
@@ -82,6 +81,7 @@ export default {};
       width: 692px;
     }
   }
+
   .little {
     display: grid;
     grid-template-columns: 454px 454px 454px;
@@ -99,6 +99,24 @@ export default {};
     &__title {
       padding: 20px;
       font-size: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    .big {
+      max-width: 500px;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+    }
+    .big img {
+      width: 500px;
+      height: 340px;
+    }
+    .little {
+      max-width: 455px;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
+      justify-content: space-between;
+      gap: 25px;
     }
   }
 }

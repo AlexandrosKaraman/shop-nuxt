@@ -4,16 +4,34 @@
       <p class="brands__title">Бренды</p>
       <div class="brands__btns">
         <button @click="prevBrand" class="brands__btn">
-          <img
-            src="https://www.flaticon.com/svg/vstatic/svg/271/271220.svg?token=exp=1618726603~hmac=403bfef8a824a24002063ccffab525bb"
-            alt="arrowLeft"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <rect fill="none" height="24" width="24" />
+            <path
+              d="M9,19l1.41-1.41L5.83,13H22V11H5.83l4.59-4.59L9,5l-7,7L9,19z"
+            />
+          </svg>
         </button>
         <button @click="nextBrand" class="brands__btn">
-          <img
-            src="https://www.flaticon.com/svg/vstatic/svg/271/271228.svg?token=exp=1618726603~hmac=921205688c3ce274e7fb7c15a53f799c"
-            alt="arrowRight"
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            enable-background="new 0 0 24 24"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="#000000"
+          >
+            <rect fill="none" height="24" width="24" />
+            <path
+              d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z"
+            />
+          </svg>
         </button>
       </div>
       <div

@@ -230,6 +230,12 @@ export default {};
 
     border-radius: 5px;
   }
+  &__icon:hover {
+    opacity: 0.8;
+  }
+  &__icon:active {
+    transform: scale(1.1);
+  }
   &__icons {
     width: 32px;
   }

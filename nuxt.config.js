@@ -1,8 +1,7 @@
 export default {
-
   target: 'static',
   router: {
-    base: '/shop-nuxt/'
+    base: '/<shop-nuxt>/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

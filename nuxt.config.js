@@ -1,4 +1,10 @@
 export default {
+
+  target: 'static',
+  router: {
+    base: '/shop-nuxt/'
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'shop',
@@ -44,4 +50,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
+
 }

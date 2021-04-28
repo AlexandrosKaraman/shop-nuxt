@@ -35,7 +35,7 @@
     </div>
     <div
       class="catalog__list"
-      :style="{ 'margin-left': '-' + 20 * currentSlideIndex + '%' }"
+      :style="{ 'margin-left': '-' + 17.5 * currentSlideIndex + 'em' }"
     >
       <catalog-item
         class="catalog__carousel"
@@ -50,7 +50,7 @@
 
 <script>
 import catalogItem from "./catalog-item";
-import { mapActions, mapGetters } from "vuex";
+import { mapActions } from "vuex";
 
 export default {
   data() {
@@ -207,6 +207,7 @@ export default {
     display: flex;
     column-gap: 45px;
     transition: all ease 0.5s;
+    margin-left: 15%;
   }
   &__btns {
     display: flex;

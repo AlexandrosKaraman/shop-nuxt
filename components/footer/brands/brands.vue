@@ -36,7 +36,7 @@
       </div>
       <div
         class="brands__list"
-        :style="{ 'margin-left': '-' + 19 * currentBrandArticle + '%' }"
+        :style="{ 'margin-left': '-' + 15 * currentBrandArticle + 'em' }"
       >
         <brandsItem
           v-for="brand in brands"

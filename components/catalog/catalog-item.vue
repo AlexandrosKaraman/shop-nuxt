@@ -40,6 +40,7 @@ export default {
   &__img {
     max-width: 221px;
   }
+
   &__title {
     font-size: 20px;
     font-weight: normal;

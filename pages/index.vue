@@ -78,7 +78,7 @@ export default {
 
   margin: 0 auto;
 }
-@media (max-width: 1408px) {
+/* @media (max-width: 1408px) {
   .container {
     max-width: 970px;
   }
@@ -92,5 +92,5 @@ export default {
   .container {
     max-width: none;
   }
-}
+} */
 </style>

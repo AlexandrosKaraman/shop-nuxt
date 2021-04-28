@@ -209,6 +209,7 @@ export default {
     transition: all ease 0.5s;
     margin-left: 15%;
   }
+
   &__btns {
     display: flex;
     justify-content: flex-end;
